@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panier E-commerce</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>IT-FINANCE SHOP</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>IT-FINANCE SHOP</h1>
         <img src="images/image_backgr.jpg" alt="Banner" />
     </header>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="pages/panier.html">Panier</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <h1>Menu de l'Application</h1>
+    <div class="options">
+        <ul>
+            <li><a href="javascript:addToCart()">Ajouter un article dans le panier</a></li>
+            <li><a href="javascript:showCart()">Afficher tous les articles</a></li>
+            <li><a href="javascript:removeFromCart()">Supprimer un article du panier</a></li>
+            <li><a href="javascript:clearCart()">Vider le panier</a></li>
+            <li><a href="javascript:quitApplication()">Quitter</a></li>
+        </ul>
+    </div>
+
+    <div id="cart-status">
+        Votre panier est vide.
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
